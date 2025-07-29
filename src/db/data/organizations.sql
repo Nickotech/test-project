@@ -1,0 +1,22 @@
+-- Insert sample data into organizations table
+INSERT INTO organizations (name) VALUES
+('Apex Solutions'),
+('NovaTech Inc.'),
+('Blue Horizon Ltd.'),
+('GreenField Group'),
+('Velocity Ventures'),
+('Orion Systems'),
+('Quantum Dynamics'),
+('Nimbus Corp.'),
+('SynergyWorks'),
+('Echo Innovations'),
+('Vertex Global'),
+('NextEra Tech'),
+('SummitEdge'),
+('BrightPath'),
+('Zenith Labs'),
+('Everest Group'),
+('StellarSoft'),
+('FusionPoint'),
+('CoreVision Inc.'),
+('OmniWave Solutions');

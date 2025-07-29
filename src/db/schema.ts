@@ -10,7 +10,7 @@ export const users = pgTable("users", {
     fullName: varchar("full_name", { length: 255 }).notNull(),
 });
 
-export const users_org = pgTable("user_org", {
+export const userOrg = pgTable("user_org", {
     id: integer().primaryKey().generatedAlwaysAsIdentity(),
     userId: integer("user_id")
         .notNull()
@@ -18,5 +18,11 @@ export const users_org = pgTable("user_org", {
     organizationId: integer("organization_id")
         .notNull()
         .references(() => organizations.id),
-    roles: text("roles").notNull().default("regular"),
+    roles: text("roles").notNull().default("Regular"),
 });
+
+export const schema = {
+    users,
+    organizations,
+    userOrg,
+};
